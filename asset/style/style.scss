@@ -1,0 +1,247 @@
+$pink: #ff6b6c;
+
+/* ----- CONFIG ----- */
+html {
+  box-sizing: border-box;
+}
+html,
+body {
+  
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  overflow-x: hidden;
+  
+}
+
+section {
+  min-height: 100vh;
+
+
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* ----- END CONFIG ----- */
+
+body {
+  background: $pink;
+}
+
+.header-wrapper {
+  min-height: 15vh;
+  color: darken($color: $pink, $amount: 5%);
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f3dfc1;
+
+  ul {
+    display: flex;
+
+    & > li {
+      margin: 1em;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.main-hero-wrapper {
+  position: relative;
+  color: #f3dfc1;
+  min-height: 85vh;
+
+  & > .hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+
+    // & > h1::before {
+    //   content: "-";
+    //   position: absolute;
+    //   color: lighten($color: #368F8B, $amount: 20%);
+    //   top: -50px;
+    //   font-weight: bold;
+    //   font-size: 3em;
+    //   border-radius: 50px;
+    // }
+
+    & > ul {
+      display: flex;
+      width: 100%;
+      margin: 0 auto;
+      justify-content: space-around;
+      margin-top: 20px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.my_works {
+  background: #f3dfc1;
+  min-height: 350vh;
+
+  & > h2 {
+    font-size: 1.5em;
+    text-align: center;
+    padding: 50px;
+    position: relative;
+    color: $pink;
+
+    &::before {
+      content: "_";
+      position: absolute;
+      color: $pink;
+      left: 50%;
+      font-size: 5em;
+      transform: translateX(-50%);
+      bottom: 90px;
+    }
+  }
+
+  .photos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-column-gap: 20px;
+    grid-row-gap: 180px;
+
+    li {
+      // -webkit-box-shadow: 0px 8px 9px -2px rgba(0, 0, 0, 0.41);
+      // -moz-box-shadow: 0px 8px 9px -2px rgba(0, 0, 0, 0.41);
+      box-shadow: 0px 8px 9px 2px rgba(0, 0, 0, 0.41);
+
+      margin: 0 auto;
+      height: 200px;
+      width: 300px;
+
+      & > .card_image {
+        margin: 0 auto;
+        height: 200px;
+        width: 300px;
+
+        & > img {
+          display: block;
+          height: 100%;
+          width: 100%;
+        }
+      }
+
+      & > .card_description {
+        box-shadow: 0px 8px 9px 2px rgba(0, 0, 0, 0.3);
+
+        padding-bottom: 120px;
+
+        background-color: $pink;
+        color: #f3dfc1;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        position: relative;
+
+        strong {
+          font-size: 2em;
+          position: absolute;
+          left: 10px;
+        }
+
+        .price {
+          position: relative;
+          top: 45px;
+          left: 10px;
+        }
+
+        span {
+          position: absolute;
+          bottom: 20px;
+          left: 10px;
+        }
+      }
+    }
+  }
+}
+
+.contact {
+  min-height: 150vh;
+  & > h3 {
+    font-size: 1.5em;
+    text-align: center;
+    padding: 50px;
+    position: relative;
+    color: #f3dfc1;
+
+    &::before {
+      content: "_";
+      position: absolute;
+      color: #f3dfc1;
+      left: 50%;
+      font-size: 5em;
+      transform: translateX(-50%);
+      bottom: 90px;
+    }
+
+  }
+
+  & > .contact_me {
+
+    display: grid;
+    grid-row-gap: 20px;
+    width: 70%;
+    margin: 50px auto;
+    position: relative;
+    color: #f3dfc1;
+
+    input {
+      // border-radius: 5px;
+      border: 1px solid transparent;
+      padding: 10px;
+      border-right: 10px solid #f3dfc1;
+
+      &:focus {
+        outline: none;
+      }
+
+    }
+
+    textarea {
+      height: 150px;
+      padding: 5px;
+    }
+
+   label {
+     text-align: right;
+   }
+
+   button {
+     width: 50%;
+     margin: 0 auto;
+   }
+
+
+    
+  }
+}
+
+.cycle-button {
+  border-radius: 20px;
+  border: 1px solid transparent;
+  padding: 0.7em;
+  outline: none;
+  cursor: pointer;
+}
