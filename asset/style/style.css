@@ -180,7 +180,7 @@ body {
 }
 
 .contact {
-  min-height: 150vh;
+  overflow: hidden;
   position: relative;
 }
 
@@ -205,7 +205,7 @@ body {
 
 .contact .copyright {
   position: absolute;
-  bottom: 20px;
+  bottom: 0;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -244,6 +244,7 @@ body {
 .contact > .contact_me button {
   width: 50%;
   margin: 0 auto;
+  margin-bottom: 50px;
   background: #f3dfc1;
   color: #ff3839;
 }
