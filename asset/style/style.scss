@@ -102,7 +102,7 @@ body {
 
 .my_works {
   background: #f3dfc1;
-  min-height: 350vh;
+  overflow: auto;
 
   & > h2 {
     font-size: 1.5em;
@@ -124,7 +124,7 @@ body {
 
   .photos {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     grid-column-gap: 20px;
     grid-row-gap: 180px;
 
@@ -156,8 +156,8 @@ body {
 
         background-color: $pink;
         color: #f3dfc1;
-        border-bottom-left-radius: 20px;
-        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
         position: relative;
 
         strong {
