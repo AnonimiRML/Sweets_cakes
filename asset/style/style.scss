@@ -91,6 +91,11 @@ body {
       justify-content: space-around;
       margin-top: 20px;
       text-transform: uppercase;
+
+      button {
+        background-color: #f3dfc1;
+        color: $pink;
+      }
     }
   }
 }

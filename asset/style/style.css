@@ -92,6 +92,11 @@ body {
   text-transform: uppercase;
 }
 
+.main-hero-wrapper > .hero-content > ul button {
+  background-color: #f3dfc1;
+  color: #ff6b6c;
+}
+
 .my_works {
   background: #f3dfc1;
   min-height: 350vh;
