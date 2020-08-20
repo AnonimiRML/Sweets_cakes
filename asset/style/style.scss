@@ -179,6 +179,7 @@ body {
 
 .contact {
   min-height: 150vh;
+  position: relative;
   & > h3 {
     font-size: 1.5em;
     text-align: center;
@@ -195,6 +196,15 @@ body {
       transform: translateX(-50%);
       bottom: 90px;
     }
+
+  }
+
+  .copyright {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #f3dfc1;
 
   }
 
@@ -231,6 +241,8 @@ body {
    button {
      width: 50%;
      margin: 0 auto;
+     background: #f3dfc1;
+     color: darken($color: $pink, $amount: 10%);
    }
 
 
