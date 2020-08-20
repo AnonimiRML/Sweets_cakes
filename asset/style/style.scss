@@ -119,6 +119,7 @@ body {
   }
 
   .photos {
+    // padding-bottom: 200px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     grid-column-gap: 20px;
@@ -253,4 +254,11 @@ body {
   padding: 0.7em;
   outline: none;
   cursor: pointer;
+}
+
+
+@media (min-width: 850px) {
+  .photos {
+    padding-bottom: 200px;
+  }
 }

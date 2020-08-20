@@ -256,4 +256,10 @@ body {
   outline: none;
   cursor: pointer;
 }
+
+@media (min-width: 850px) {
+  .photos {
+    padding-bottom: 200px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
