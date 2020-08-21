@@ -63,6 +63,10 @@ body {
   margin: 1em;
 }
 
+.header-wrapper ul li a {
+  color: #ff5253;
+}
+
 .header-wrapper ul li:last-child {
   margin-right: 0;
 }
