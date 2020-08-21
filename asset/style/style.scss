@@ -41,6 +41,8 @@ body {
   min-height: 15vh;
   color: darken($color: $pink, $amount: 5%);
   display: flex;
+  position: fixed;
+  z-index: 2;
   width: 100%;
   justify-content: space-around;
   align-items: center;
