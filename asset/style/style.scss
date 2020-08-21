@@ -51,7 +51,7 @@ body {
   ul {
     display: flex;
 
-    & > li {
+    & li {
       margin: 1em;
       &:last-child {
         margin-right: 0;
@@ -63,9 +63,9 @@ body {
 .main-hero-wrapper {
   position: relative;
   color: #f3dfc1;
-  min-height: 85vh;
+  min-height: 100vh;
 
-  & > .hero-content {
+  & .hero-content {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -82,17 +82,33 @@ body {
     //   border-radius: 50px;
     // }
 
-    & > ul {
+    & ul {
       display: flex;
-      width: 100%;
-      margin: 0 auto;
-      justify-content: space-around;
+      width: 100vw;
+      justify-content: space-evenly;
+      align-items: center;
       margin-top: 20px;
       text-transform: uppercase;
+
+      .cake-svg {
+        display: none;
+        height: 300px;
+        width: 300px;
+      }
+
+      img {
+        
+        height: 100%;
+        width: 100%;
+      }
 
       button {
         background-color: #f3dfc1;
         color: $pink;
+        font-weight: bold;
+        padding: 10px;
+        border: 1px solid transparent;
+        width: 60%;
       }
     }
   }
@@ -280,6 +296,10 @@ body {
 @media (min-width: 850px) {
   .photos {
     padding-bottom: 200px;
+  }
+
+  .cake-svg {
+    display: block !important;
   }
 
   // .contact ul {
