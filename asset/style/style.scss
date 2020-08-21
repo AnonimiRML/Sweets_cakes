@@ -184,7 +184,7 @@ body {
 
   position: relative;
 
-  & > h3 {
+  & h3 {
     font-size: 1.5em;
     text-align: center;
     padding: 50px;
@@ -202,21 +202,31 @@ body {
     }
   }
 
-  .copyright {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    color: #f3dfc1;
+  footer {
+    background: #f3dfc1;
+    height: 15vh;
+    position: relative;
+
+    .copyright {
+      position: absolute;
+      color: $pink;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      
+    }
   }
 
-  & > .contact_me {
+  
+
+  & .contact_me {
     display: grid;
     grid-row-gap: 20px;
     width: 70%;
     margin: 50px auto;
     position: relative;
     color: #f3dfc1;
+    max-width: 550px;
 
     input {
       // border-radius: 5px;
@@ -261,4 +271,13 @@ body {
   .photos {
     padding-bottom: 200px;
   }
+
+  // .contact ul {
+  //   display: flex;
+  //   width: 100%;
+  //   margin: 0 auto;
+  //   flex-direction: row;
+  //   justify-content: space-evenly;
+
+  // }
 }

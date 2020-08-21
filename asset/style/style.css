@@ -184,7 +184,7 @@ body {
   position: relative;
 }
 
-.contact > h3 {
+.contact h3 {
   font-size: 1.5em;
   text-align: center;
   padding: 50px;
@@ -192,7 +192,7 @@ body {
   color: #f3dfc1;
 }
 
-.contact > h3::before {
+.contact h3::before {
   content: "_";
   position: absolute;
   color: #f3dfc1;
@@ -203,16 +203,22 @@ body {
   bottom: 90px;
 }
 
-.contact .copyright {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  color: #f3dfc1;
+.contact footer {
+  background: #f3dfc1;
+  height: 15vh;
+  position: relative;
 }
 
-.contact > .contact_me {
+.contact footer .copyright {
+  position: absolute;
+  color: #ff6b6c;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.contact .contact_me {
   display: -ms-grid;
   display: grid;
   grid-row-gap: 20px;
@@ -220,28 +226,29 @@ body {
   margin: 50px auto;
   position: relative;
   color: #f3dfc1;
+  max-width: 550px;
 }
 
-.contact > .contact_me input {
+.contact .contact_me input {
   border: 1px solid transparent;
   padding: 10px;
   border-right: 10px solid #f3dfc1;
 }
 
-.contact > .contact_me input:focus {
+.contact .contact_me input:focus {
   outline: none;
 }
 
-.contact > .contact_me textarea {
+.contact .contact_me textarea {
   height: 150px;
   padding: 5px;
 }
 
-.contact > .contact_me label {
+.contact .contact_me label {
   text-align: right;
 }
 
-.contact > .contact_me button {
+.contact .contact_me button {
   width: 50%;
   margin: 0 auto;
   margin-bottom: 50px;
