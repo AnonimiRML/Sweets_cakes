@@ -244,16 +244,23 @@ body {
   padding: 5px;
 }
 
+.contact .contact_me textarea:focus {
+  outline: none;
+  border: 1px solid transparent;
+}
+
 .contact .contact_me label {
   text-align: right;
 }
 
 .contact .contact_me button {
   width: 50%;
+  font-weight: bold;
+  max-width: 200px;
   margin: 0 auto;
   margin-bottom: 50px;
   background: #f3dfc1;
-  color: #ff3839;
+  color: #ff6b6c;
 }
 
 .cycle-button {

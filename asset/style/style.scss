@@ -242,6 +242,11 @@ body {
     textarea {
       height: 150px;
       padding: 5px;
+
+      &:focus {
+        outline: none;
+        border: 1px solid transparent;
+      }
     }
 
     label {
@@ -249,11 +254,14 @@ body {
     }
 
     button {
+      
       width: 50%;
+      font-weight: bold;
+      max-width: 200px;
       margin: 0 auto;
       margin-bottom: 50px;
       background: #f3dfc1;
-      color: darken($color: $pink, $amount: 10%);
+      color: $pink;
     }
   }
 }
