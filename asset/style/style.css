@@ -79,7 +79,7 @@ body {
 
 .main-hero-wrapper .bottom-arrow {
   position: absolute;
-  bottom: 50px;
+  bottom: 90px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
