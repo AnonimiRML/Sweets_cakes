@@ -68,6 +68,21 @@ body {
   color: #f3dfc1;
   min-height: 100vh;
 
+  .bottom-arrow {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    ul {
+      display: flex;
+      flex-direction: column-reverse;
+      
+      align-items: center;
+      color: #f6f6f6;
+      margin: 0 auto;
+    }
+  }
+
   & .hero-content {
     position: absolute;
     top: 50%;
@@ -100,7 +115,6 @@ body {
       }
 
       img {
-        
         height: 100%;
         width: 100%;
       }
@@ -111,6 +125,7 @@ body {
         font-weight: bold;
         padding: 10px;
         margin-top: 20px;
+
         border: 1px solid transparent;
         width: 60%;
       }
@@ -170,7 +185,7 @@ body {
 
       & > .card_description {
         box-shadow: 0px 8px 9px 2px rgba(0, 0, 0, 0.3);
-
+        padding: 10px;
         padding-bottom: 120px;
 
         background-color: $pink;
@@ -186,7 +201,7 @@ body {
         }
 
         .price {
-          position: relative;
+          position: absolute;
           top: 45px;
           left: 10px;
         }
@@ -235,11 +250,8 @@ body {
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
-      
     }
   }
-
-  
 
   & .contact_me {
     display: grid;
@@ -276,7 +288,6 @@ body {
     }
 
     button {
-      
       width: 50%;
       font-weight: bold;
       max-width: 200px;
@@ -295,7 +306,6 @@ body {
   outline: none;
   cursor: pointer;
 }
-
 
 @media (min-width: 850px) {
   .photos {
